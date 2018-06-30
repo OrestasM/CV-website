@@ -1,0 +1,27 @@
+{
+  "name": "cv-website",
+  "version": "1.0.0",
+  "description": "My personal CV-website",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "*",
+    "bootstrap": "^3.3.7",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrestasM/CV-website.git"
+  },
+  "author": "Orestas Mažeika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OrestasM/CV-website/issues"
+  },
+  "homepage": "https://github.com/OrestasM/CV-website#readme"
+}
