@@ -13,7 +13,7 @@
 }
 
 body {
-    padding-top: 60px;
+    padding-top: 30px;
     background-color: #262626;
     animation: fadeinfull 2s;
     -moz-animation: fadeinfull 2s;
@@ -88,8 +88,9 @@ nav::after {
 
 .jumbotron {
     padding-top: 100px;
+    padding-bottom: 0px;
     margin-bottom: 0;
-    background: url(../images/code2.jpg) no-repeat center center fixed;
+    background: url(../images/code.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -144,10 +145,6 @@ nav::after {
     }
 }
 
-#aboutme{
-    background-color: #dedede;
-}
-
 #skills{
     background-color: white;
 
@@ -155,4 +152,34 @@ nav::after {
 
 #contacts{
     background-color: aqua;
+}
+
+.active{
+    animation: fadeinfull 1s;
+    -moz-animation: fadeinfull 1s;
+    /* Firefox */
+    -webkit-animation: fadeinfull 1s;
+    /* Safari and Chrome */
+    -o-animation: fadeinfull 1s;
+    /* Opera */
+}
+a:hover{
+    background-color:#CC0000 !important;
+    animation: fadeinfull 1s;
+    -moz-animation: fadeinfull 1s;
+    /* Firefox */
+    -webkit-animation: fadeinfull 1s;
+    /* Safari and Chrome */
+    -o-animation: fadeinfull 1s;
+    /* Opera */
+}
+
+img{
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: cover;
+}
+
+#aboutme{
+    background: #dedede;
 }
