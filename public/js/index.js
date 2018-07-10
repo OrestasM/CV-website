@@ -1,6 +1,7 @@
-$(document).ready(function () {
-    console.log("ready!");
-    // $("body").css("background-color", "yellow");            //For testing jQuery connection
-
-
+$(document).ready(function(){
+    $(this).scrollTop(0);
+    
+    $(window).scroll(function(){
+        $('.navbar').toggleClass('solid', $(this).scrollTop() > 100);
+    });
 });

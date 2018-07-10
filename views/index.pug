@@ -8,7 +8,7 @@ html
 
         
     body(data-spy="scroll" data-target=".navbar" data-offset="20" id="home")
-        nav.navbar.navbar-fixed-top.transparent.navbar-default(role="navigation").transparent
+        nav.navbar.navbar-fixed-top.navbar-default(role="navigation")
             .container-fluid
                 .navbar-header
                     button.navbar-toggle(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
@@ -35,47 +35,86 @@ html
             
 
         #aboutme.container-fluid
-            strong Apie mane
-            p
-                | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1   
-            p
-                | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!  
-            p
-                | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
-                p
-                | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1   
-            p
-                | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!  
-            p
-                | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
-                p
-                | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1   
-            p
-                | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!  
-            p
-                | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
+            h1 Apie mane
+            p Esu antro kurso programų inžinerijos studentas Vilniaus Gedimino Technikos universitete.
+            p Prieš metus pradėjau domėtis Web programavimu, todėl būtent ši sritis šiuo metu mane labiausiai domina.
+            p Esu atviras naujovėms, mėgstu mokytis naujus dalykus.
+                
+            .container
+                ul.timeline
 
+                    li
+                        .timeline-badge
+                            i.glyphicon.glyphicon-check
+                        .timeline-panel
+                            .timeline-heading
+                                p
+                                    small.text-muted
+                                        i.glyphicon.glyphicon-time
+                                        |  2016 liepos 15 d.
+                            .timeline-body
+                                p Baigiau Rietavo Lauryno Ivinskio gimnaziją
+
+                    li.timeline-inverted
+                        .timeline-badge
+                            i.glyphicon.glyphicon-check
+                        .timeline-panel
+                            .timeline-heading
+                                p
+                                    small.text-muted
+                                        i.glyphicon.glyphicon-time
+                                        |  2016 rugsėjo 1 d.
+                            .timeline-body
+                                p Pradėjau studijuoti programų inžineriją Vilniaus Gedimino technikos universitete
+
+                    li
+                        .timeline-badge
+                            i.glyphicon.glyphicon-check
+                        .timeline-panel
+                            .timeline-heading
+                                p
+                                    small.text-muted
+                                        i.glyphicon.glyphicon-time
+                                        |  2017 vasaris - gegužė
+                            .timeline-body
+                                p Mokiausi "Swedbank IT akademijoje"
+
+                    li.timeline-inverted
+                        .timeline-badge
+                            i.glyphicon.glyphicon-check
+                        .timeline-panel
+                            .timeline-heading
+                                p
+                                    small.text-muted
+                                        i.glyphicon.glyphicon-time
+                                        |  2018 gegužės 21 d.
+                            .timeline-body
+                                p Pradėjau praktiką banke "Luminor"
 
         #skills.container-fluid
             h1 Mano sugebėjimai
-                p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1   
-                p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!  
-                p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
-                    p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1   
-                p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!  
-                p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
-                    p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1   
-                p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!  
-                p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
+            .row
+                .col-md-4.html
+                    p HTML
+                .col-md-4.css
+                    p CSS
+                .col-md-4.js
+                    p Javascript
+            .row
+                .col-md-4.nodejs
+                    p NodeJS
+                .col-md-4.express
+                    p Express
+                .col-md-4.bootstrap
+                    p Bootstrap
+            .row
+                .col-md-4.photoshop
+                    p Adobe Photoshop
+                .col-md-4.xd
+                    p Adobe XD
+                .col-md-4.pug
+                    p Jade Pug
+           
     
         #contacts.container-fluid
             h1 Kontaktai
