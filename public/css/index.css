@@ -101,7 +101,7 @@ nav::after {
     color: white;
 }
 
-.active>a {
+.active>a.navlink {
     background-color: #CC0000 !important;
     opacity: 0.9;
 }
@@ -148,19 +148,7 @@ nav::after {
     }
 } */
 
-
-
-.active{
-    animation: fadeinfull 1s;
-    -moz-animation: fadeinfull 1s;
-    /* Firefox */
-    -webkit-animation: fadeinfull 1s;
-    /* Safari and Chrome */
-    -o-animation: fadeinfull 1s;
-    /* Opera */
-}
-a:hover{
-    background-color:rgb(129, 0, 0) !important;
+.active {
     animation: fadeinfull 1s;
     -moz-animation: fadeinfull 1s;
     /* Firefox */
@@ -170,13 +158,24 @@ a:hover{
     /* Opera */
 }
 
-img{
+a.navlink:hover {
+    background-color: rgb(129, 0, 0) !important;
+    animation: fadeinfull 1s;
+    -moz-animation: fadeinfull 1s;
+    /* Firefox */
+    -webkit-animation: fadeinfull 1s;
+    /* Safari and Chrome */
+    -o-animation: fadeinfull 1s;
+    /* Opera */
+}
+
+img {
     background-repeat: no-repeat;
     background-position: 0;
     background-size: cover;
 }
 
-.solid{
+.solid {
     background-color: #262626;
     -webkit-transition: background .5s ease-in;
     -moz-transition: background .5s ease-in;
@@ -184,36 +183,35 @@ img{
     transition: background .5s ease-in;
 }
 
-#aboutme{
+#aboutme {
     background: #dedede;
     padding: 25px 10px 25px 40px !important;
 }
 
-#skills{
+#skills {
     background-color: white;
     padding: 25px 10px 25px 40px !important;
 }
 
-#contacts{
-    background-color: aqua;
+#contacts {
+    background-color: #dedede;
 }
 
-
-p{
+p {
     font-size: large;
-    text-indent: 50px;
 }
 
-h1{
-    padding-bottom: 10px;
+h1 {
+    padding-bottom: 30px;
 }
 
 .timeline {
     list-style: none;
     padding: 20px 0 20px;
     position: relative;
-  }
-  .timeline:before {
+}
+
+.timeline:before {
     top: 0;
     bottom: 0;
     position: absolute;
@@ -222,28 +220,35 @@ h1{
     background-color: #eeeeee;
     left: 50%;
     margin-left: -1.5px;
-  }
-  .timeline > li {
+}
+
+.timeline>li {
     margin-bottom: 20px;
     position: relative;
-  }
-  .timeline > li:before,
-  .timeline > li:after {
+}
+
+.timeline>li:before,
+.timeline>li:after {
     content: " ";
     display: table;
-  }
-  .timeline > li:after {
+}
+
+.timeline>li:after {
     clear: both;
-  }
-  .timeline > li:before,
-  .timeline > li:after {
+}
+
+.timeline>li:before,
+.timeline>li:after {
     content: " ";
     display: table;
-  }
-  .timeline > li:after {
+}
+
+.timeline>li:after {
     clear: both;
-  }
-  .timeline > li > .timeline-panel {
+}
+
+.timeline>li>.timeline-panel {
+    background-color: white;
     width: 46%;
     float: left;
     border: 1px solid #d4d4d4;
@@ -252,30 +257,9 @@ h1{
     position: relative;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  }
-  .timeline > li > .timeline-panel:before {
-    position: absolute;
-    top: 26px;
-    right: -15px;
-    display: inline-block;
-    border-top: 15px solid transparent;
-    border-left: 15px solid #ccc;
-    border-right: 0 solid #ccc;
-    border-bottom: 15px solid transparent;
-    content: " ";
-  }
-  .timeline > li > .timeline-panel:after {
-    position: absolute;
-    top: 27px;
-    right: -14px;
-    display: inline-block;
-    border-top: 14px solid transparent;
-    border-left: 14px solid #dedede;
-    border-right: 0 solid #dedede;
-    border-bottom: 14px solid transparent;
-    content: " ";
-  }
-  .timeline > li > .timeline-badge {
+}
+
+.timeline>li>.timeline-badge {
     color: #fff;
     width: 50px;
     height: 50px;
@@ -292,90 +276,94 @@ h1{
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
     float: right;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel:before {
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
     border-left-width: 0;
     border-right-width: 15px;
     left: -15px;
     right: auto;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel:after {
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
     border-left-width: 0;
     border-right-width: 14px;
     left: -14px;
     right: auto;
-  }
-  .timeline-badge.primary {
+}
+
+.timeline-badge.primary {
     background-color: #2e6da4 !important;
-  }
-  .timeline-badge.success {
+}
+
+.timeline-badge.success {
     background-color: #3f903f !important;
-  }
-  .timeline-badge.warning {
+}
+
+.timeline-badge.warning {
     background-color: #f0ad4e !important;
-  }
-  .timeline-badge.danger {
+}
+
+.timeline-badge.danger {
     background-color: #d9534f !important;
-  }
-  .timeline-badge.info {
+}
+
+.timeline-badge.info {
     background-color: #5bc0de !important;
-  }
-  .timeline-title {
+}
+
+.timeline-title {
     margin-top: 0;
     color: inherit;
-  }
-  .timeline-body > p,
-  .timeline-body > ul {
-    margin-bottom: 0;
-  }
-  .timeline-body > p + p {
-    margin-top: 5px;
-  }
-  .container{
-      background-color: #dedede;
-      padding-top: 40px;
-  }
-  .html{
-    background:#dedede;
-
-  }
-
-  .css{
-    background:#dedede;
-  }
-
-  .js{
-    background:#dedede;
-  }
-
-  .nodejs{
-    background:#dedede;
-  }
-
-  .bootstrap{
-    background:#dedede;
-  }
-
-  .photoshop{
-    background:#dedede;
-
-  }
-
-  .xd{
-    background:#dedede;
-  }
-
-  .express{
-    background:#dedede;
-  }
-
-  .pug{
-    background:#dedede;
-  }
-
-  .row {
-    border: blue 1px solid;
 }
+
+.timeline-body>p,
+.timeline-body>ul {
+    margin-bottom: 0;
+}
+
+.timeline-body>p+p {
+    margin-top: 5px;
+}
+.container {
+    background: #dedede;
+}
+
+.html {
+    background: #dedede;
+}
+.html, .css, .js, .nodejs, .bootstrap, .photoshop, .xd, .express, .pug{
+    background: #dedede;
+    border-radius: 10px;
+    height: 200px;
+    line-height: 200px;
+}
+
+.row{
+    background-color: white;
+    margin-bottom: 10px;
+    padding-left: 50px;
+}
+.skill{
+    background-color: white;
+}
+
+
+#logo {
+vertical-align: middle;
+padding-bottom: 20px;
+}
+
+h5{
+    margin-bottom:-10px;
+    padding-top:10px;
+    font-weight: bold;
+}
+a svg {
+    display: inline-block;
+    vertical-align: middle;
+  }

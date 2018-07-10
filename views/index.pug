@@ -20,13 +20,13 @@ html
                 #bs-example-navbar-collapse-1.collapse.navbar-collapse
                     ul.nav.navbar-nav
                         li
-                            a(href="#home") Pradžia
+                            a(href="#home" class="navlink") Pradžia
                         li
-                            a(href="#aboutme") Apie mane     
+                            a(href="#aboutme" class="navlink") Apie mane     
                         li
-                            a(href="#skills") Sugebėjimai      
+                            a(href="#skills" class="navlink") Sugebėjimai      
                         li
-                            a(href="#contacts") Kontaktai
+                            a(href="#contacts" class="navlink") Kontaktai
         //-     /.navbar-collapse
         //- /.container-fluid
        
@@ -35,11 +35,8 @@ html
             
 
         #aboutme.container-fluid
-            h1 Apie mane
-            p Esu antro kurso programų inžinerijos studentas Vilniaus Gedimino Technikos universitete.
-            p Prieš metus pradėjau domėtis Web programavimu, todėl būtent ši sritis šiuo metu mane labiausiai domina.
-            p Esu atviras naujovėms, mėgstu mokytis naujus dalykus.
-                
+            .text-center
+                    h1 Apie mane
             .container
                 ul.timeline
 
@@ -90,140 +87,71 @@ html
                                         |  2018 gegužės 21 d.
                             .timeline-body
                                 p Pradėjau praktiką banke "Luminor"
+            .container
+                p Esu antro kurso programų inžinerijos studentas Vilniaus Gedimino Technikos universitete.
+                p Prieš metus pradėjau domėtis Web programavimu, todėl būtent ši sritis mane labiausiai domina.
+                p Esu atviras naujovėms, mėgstu mokytis naujus dalykus.
+                
 
         #skills.container-fluid
-            h1 Mano sugebėjimai
-            .row
-                .col-md-4.html
-                    p HTML
-                .col-md-4.css
-                    p CSS
-                .col-md-4.js
-                    p Javascript
-            .row
-                .col-md-4.nodejs
-                    p NodeJS
-                .col-md-4.express
-                    p Express
-                .col-md-4.bootstrap
-                    p Bootstrap
-            .row
-                .col-md-4.photoshop
-                    p Adobe Photoshop
-                .col-md-4.xd
-                    p Adobe XD
-                .col-md-4.pug
-                    p Jade Pug
-           
+            .text-center
+                h1 Mano sugebėjimai
+                .container.skill
+                    .row
+                        .col-md-3.html
+                            h5 HTML
+                            img(src="../images/html.png")#logo
+                        .col-md-3.col-md-offset-1.css
+                            h5 CSS
+                            img(src="../images/css.png")#logo
+                        .col-md-3.col-md-offset-1.js
+                            h5 Javascript
+                            img(src="../images/js.png")#logo
+                    .row
+                        .col-md-3.nodejs
+                            h5 NodeJS
+                            img(src="../images/nodejs.png")#logo
+                        .col-md-3.col-md-offset-1.express
+                            h5 Express
+                            img(src="../images/express.png")#logo
+                        .col-md-3.col-md-offset-1.bootstrap
+                            h5 Bootstrap
+                            img(src="../images/bootstrap.png")#logo
+                    .row
+                        .col-md-3.photoshop
+                            h5 Adobe Photoshop
+                            img(src="../images/ps.png")#logo
+                        .col-md-3.col-md-offset-1.xd
+                            h5 Adobe XD
+                            img(src="../images/xd.png")#logo
+                        .col-md-3.col-md-offset-1.pug
+                            h5 MongoDB
+                            img(src="../images/mongodb.png")#logo
+                
     
         #contacts.container-fluid
-            h1 Kontaktai
-                p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1   
-                p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!  
-                p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
-                    p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1   
-                p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!  
-                p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
-                    p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1   
-                p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!  
-                p
-                    | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
-                 
+            .text-center
+                h1 Kontaktai
 
-        //- #skills.container-fluid
-        //-     h1 Section 2
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
-        //- #contacts.container-fluid
-        //-     h1 Section 3
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar wh h1 Section 1
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!ile scrolling!
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
-        //- #section4.container-fluid
-        //-     h1 Section 4 Submenu 1
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation ba h1 Section 1
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling! h1 Section 1
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!r while scrolling!
-        //-     |   
-        //-     p
-        //-         | Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
-        
+            .container
+                
+                a(href='https://www.facebook.com/profile.php?id=100003219100346')
+                    svg(style='width:24px;height:24px', viewbox='0 0 24 24')
+                         path(fill='#000000', d='M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z')
+                            span Facebook
+                                br
 
+                a(href='https://www.linkedin.com/in/orestasmaz/')
+                    svg(style='width:24px;height:24px', viewbox='0 0 24 24')
+                         path(fill='#000000', d='M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z')
+                            span LinkedIn
+                                br
+
+                a.disabled
+                    svg(style='width:24px;height:24px', viewbox='0 0 24 24')
+                        path(fill='#000000', d='M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z')
+                            span +370 693 10546
+    
     script(src = '/jquery/jquery.js')
     script(src = '/bootstrap/js/bootstrap.js')
     script(src = '/js/index.js')
