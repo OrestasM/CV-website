@@ -17,6 +17,7 @@
 }
 
 body {
+    font-family: 'Archivo', sans-serif;
     background-color: #262626;
     animation: fadeinfull 2s;
     -moz-animation: fadeinfull 2s;
@@ -190,11 +191,16 @@ img {
 
 #skills {
     background-color: white;
-    padding: 25px 10px 25px 40px !important;
 }
 
 #contacts {
     background-color: #dedede;
+    margin: 0 auto;
+    padding: 25px 10px 50px 40px !important;
+}
+
+#skills {
+    background-color: white;
 }
 
 p {
@@ -346,7 +352,7 @@ h1 {
 .row{
     background-color: white;
     margin-bottom: 10px;
-    padding-left: 50px;
+    padding-left: 80px;
 }
 .skill{
     background-color: white;
@@ -367,3 +373,28 @@ a svg {
     display: inline-block;
     vertical-align: middle;
   }
+
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+
+span{
+    padding: 5px 5px 5px 5px;
+    color: #333;
+    text-decoration: none;
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+}
+
+.burger{
+    color:#dedede;
+    padding: 0 0 0 0;
+}
+.navbar-toggle{
+    padding: 9px 10px 6px !important; 
+    background-color: #262626 !important;
+}
+ul.timeline{
+    margin-bottom: 30px;
+}
