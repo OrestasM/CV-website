@@ -4,6 +4,7 @@ html
         title OrestasMažeika - CV
         link(rel="stylesheet", href="/bootstrap/css/bootstrap.css")
         link(rel="stylesheet", href="css/index.css")
+        link(rel='shortcut icon', type='image/png', href='../images/favicon-64.png')
         link(href='https://fonts.googleapis.com/css?family=Archivo', rel='stylesheet')
         link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.1.0/css/all.css', integrity='sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt', crossorigin='anonymous')
         meta(name="viewport", content="width=device-width, initial-scale=1")
@@ -31,14 +32,14 @@ html
                             a#navbarDropdown.nav-link.navlink.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                                 | Language
                             .dropdown-menu(aria-labelledby='navbarDropdown')
-                                        a.dropdown-item(href='/en') English
+                                        a.dropdown-item(href='/') English
                                             br
                                         a.dropdown-item(href='/lt') Lietuvių
         //-     /.navbar-collapse
         //- /.container-fluid
        
         #home.jumbotron.jumbotron-fluid
-            img(src="../images/prof.png", alt="" class="img-responsive")
+            img(src="../images/prof_eng.png", alt="" class="img-responsive")
             
 
         #aboutme.container-fluid
@@ -91,7 +92,7 @@ html
                                 p
                                     small.text-muted
                                         i.glyphicon.glyphicon-time
-                                        |  21 May 2018
+                                        |  21 May 2018 - Present
                             .timeline-body
                                 p Internship at "Luminor"
             div(style='text-align: center;')
@@ -168,15 +169,12 @@ html
 
             div(style='text-align: center;')
                     div(style='display: inline-block; text-align: left;')
-                        span Download my CV in PDF format
-
-                    //- a(href='../images/cv.pdf', download='') Parsisiųsti
-                    //-     br
-
-
-
-
-    
+                        h5.pad-bottom Download my CV in PDF format
+                        br
+                        .row.color
+                            a(href='files/CV_LT.pdf', download='').navlink.download.navlink.col LT version
+                            a(href='files/CV_EN.pdf', download='').navlink.download.col.col-md-offset-2 EN version
+                    
     script(src = '/jquery/jquery.js')
     script(src = '/bootstrap/js/bootstrap.js')
     script(src = '/js/index.js')

@@ -20,18 +20,12 @@ app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/'
 app.use('/jquery', express.static(__dirname + "/node_modules/jquery/dist/"))
 
 app.get('/',function(req,res){
-    res.render('language');
-});
-
-app.get('/en',function(req,res){
     res.render('index_en');
 });
 
 app.get('/lt',function(req,res){
     res.render('index');
 });
-
-
 
 app.listen(3000, function(){
     console.log("Server started on port 3000...");

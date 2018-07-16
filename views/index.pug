@@ -4,6 +4,7 @@ html
         title OrestasMažeika - CV
         link(rel="stylesheet", href="/bootstrap/css/bootstrap.css")
         link(rel="stylesheet", href="css/index.css")
+        link(rel='shortcut icon', type='image/png', href='../images/favicon-64.png' sizes="16x16")
         link(href='https://fonts.googleapis.com/css?family=Archivo', rel='stylesheet')
         link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.1.0/css/all.css', integrity='sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt', crossorigin='anonymous')
         meta(name="viewport", content="width=device-width, initial-scale=1")
@@ -31,7 +32,7 @@ html
                             a#navbarDropdown.nav-link.navlink.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                                 | Kalba
                             .dropdown-menu(aria-labelledby='navbarDropdown')
-                                a.dropdown-item(href='/en') English
+                                a.dropdown-item(href='/') English
                                     br
                                 a.dropdown-item(href='/lt') Lietuvių
 
@@ -70,7 +71,7 @@ html
                                         i.glyphicon.glyphicon-time
                                         |  2016 rugsėjo 1 d.
                             .timeline-body
-                                p Pradėjau studijuoti programų inžineriją Vilniaus Gedimino technikos universitete
+                                p Pradėjau studijuoti programų inžineriją Vilniaus Gedimino Technikos Universitete
 
                     li
                         .timeline-badge
@@ -92,7 +93,7 @@ html
                                 p
                                     small.text-muted
                                         i.glyphicon.glyphicon-time
-                                        |  2018 gegužės 21 d.
+                                        |  2018 gegužės 21 d. - dabar
                             .timeline-body
                                 p Pradėjau praktiką banke "Luminor"
             div(style='text-align: center;')
@@ -169,15 +170,13 @@ html
 
             div(style='text-align: center;')
                     div(style='display: inline-block; text-align: left;')
-                        span Parsisiųskite mano CV PDF formatu
+                        h5 Parsisiųskite mano CV PDF formatu
+                        br
+                        .row.color
+                            a(href='files/CV_LT.pdf', download='').navlink.download.navlink.col LT versija
+                            a(href='files/CV_EN.pdf', download='').navlink.download.col.col-md-offset-2 EN versija
+                    
 
-                    //- a(href='../images/cv.pdf', download='') Parsisiųsti
-                    //-     br
-
-
-
-
-    
     script(src = '/jquery/jquery.js')
     script(src = '/bootstrap/js/bootstrap.js')
     script(src = '/js/index.js')

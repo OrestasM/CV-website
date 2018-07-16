@@ -16,6 +16,11 @@
     transition: background .5s ease-out;
 }
 
+a{
+    color: #f5f5f5 !important;
+    text-decoration: none !important;
+}
+
 body {
     font-family: 'Archivo', sans-serif;
     background-color: #262626;
@@ -162,7 +167,9 @@ nav::after {
 
 a.navlink:hover {
     background-color: rgb(129, 0, 0) !important;
+    color: #f5f5f5;
     animation: fadeinfull 1s;
+    text-decoration: none;
     -moz-animation: fadeinfull 1s;
     /* Firefox */
     -webkit-animation: fadeinfull 1s;
@@ -422,4 +429,38 @@ div.language{
 
 li.open>a{
     background-color: rgb(129, 0, 0) !important;
+}
+
+.download{
+    background-color: #CC0000;
+    text-decoration: none;
+    color: #f5f5f5;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    white-space: nowrap;
+    opacity: 0.9;
+    text-align: center;
+    width: auto;
+
+}
+
+a.download:visited { 
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.color{
+    background-color: #dedede;
+    padding-left: 15px;
+}
+
+.dropdown-item{
+
+    color:#f5f5f5 !important;
+    padding-left: 10px;
+}
+
+.dropdown-menu{
+    border-radius: 10px !important;
+    background-color:#262626 !important;
 }
