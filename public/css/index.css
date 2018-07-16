@@ -88,6 +88,7 @@ nav::after {
 .nav {
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-right: 20px;
 }
 
 .jumbotron {
@@ -397,4 +398,28 @@ span{
 }
 ul.timeline{
     margin-bottom: 30px;
+}
+div.language{
+    height: 200px;
+    width: 400px;
+    background: #262626;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+
+.text{
+    color: #dedede;
+}
+
+
+.lang{
+    margin-right: 8px;
+}
+
+li.open>a{
+    background-color: rgb(129, 0, 0) !important;
 }
