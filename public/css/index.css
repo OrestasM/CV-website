@@ -8,6 +8,11 @@
     display: inline-block;
 }
 
+html{
+    width: 100%;
+    min-width: 300px;
+}
+
 .navbar {
     background-color: transparent;
     -webkit-transition: background .5s ease-out;
@@ -117,7 +122,7 @@ nav::after {
     background-color: rgba(110, 110, 110, 0.6);
 }
 
-/* @media (max-width: 1100px) {
+@media (max-width: 1100px) {
     .navbar-header {
         float: none;
     }
@@ -153,7 +158,7 @@ nav::after {
     .collapse.in {
         display: block !important;
     }
-} */
+}
 
 .active {
     animation: fadeinfull 1s;
@@ -441,6 +446,7 @@ li.open>a{
     opacity: 0.9;
     text-align: center;
     width: auto;
+    margin-left: 10px;
 
 }
 
@@ -464,3 +470,44 @@ a.download:visited {
     border-radius: 10px !important;
     background-color:#262626 !important;
 }
+
+.min{
+    min-width: 280px !important;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+@media (max-width: 576px) {
+    .row.pad{
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 576px) {
+    .row.pad{
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .row.pad{
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .row.pad{
+        padding-left: 50px;
+    }
+ }
+
+ @media (min-width: 1200px) { 
+    .row.pad{
+        padding-left: 150px;
+    }
+ }
+
+ .timeline-panel{
+     padding-left: 10px !important;
+     padding-right: 10px !important;
+ }

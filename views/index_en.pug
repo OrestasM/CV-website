@@ -46,7 +46,7 @@ html(xmlns="http://www.w3.org/1999/xhtml", xmlns:og="http://ogp.me/ns#", xmlns:f
         //- /.container-fluid
        
         #home.jumbotron.jumbotron-fluid
-            img(src="../images/prof_eng.png", alt="" class="img-responsive")
+            img(src="../images/prof_eng.png", alt="" style="width:100%;" class="img-responsive")
             
 
         #aboutme.container-fluid
@@ -115,34 +115,39 @@ html(xmlns="http://www.w3.org/1999/xhtml", xmlns:og="http://ogp.me/ns#", xmlns:f
             .text-center
                 h1 Skills
                 .container.skill
-                    .row
-                        .col-md-3.html
+                    .row.pad
+
+                        .col-xs-12.col-md-3.col-lg-3.col-xl-3.html.min
                             h5 HTML
                             img(src="../images/html.png")#logo
-                        .col-md-3.col-md-offset-1.css
+                        .col-xs-12.col-md-3.col-md-offset-1.col-lg-3.col-lg-offset-1.col-xl-3.col-xl-offset-1.css.min
                             h5 CSS
                             img(src="../images/css.png")#logo
-                        .col-md-3.col-md-offset-1.js
+                        .col-xs-12.col-md-3.col-md-offset-1.col-lg-3.col-lg-offset-1.col-xl-3.col-xl-offset-1.js.min
                             h5 Javascript
                             img(src="../images/js.png")#logo
-                    .row
-                        .col-md-3.nodejs
+
+                    .row.pad
+
+                        .col-xs-12.col-md-3.col-lg-3.col-xl-3.nodejs.min
                             h5 NodeJS
                             img(src="../images/nodejs.png")#logo
-                        .col-md-3.col-md-offset-1.express
+                        .col-xs-12.col-md-3.col-md-offset-1.col-lg-3.col-xl-3.express.min
                             h5 Express
                             img(src="../images/express.png")#logo
-                        .col-md-3.col-md-offset-1.bootstrap
+                        .col-xs-12.col-md-3.col-md-offset-1.col-lg-3.col-xl-3.bootstrap.min
                             h5 Bootstrap
                             img(src="../images/bootstrap.png")#logo
-                    .row
-                        .col-md-3.photoshop
+
+                    .row.pad
+
+                        .col-xs-12.col-md-3.col-lg-3.col-xl-3.photoshop.min
                             h5 Adobe Photoshop
                             img(src="../images/ps.png")#logo
-                        .col-md-3.col-md-offset-1.xd
+                        .col-xs-12.col-md-3.col-md-offset-1.col-lg-3.col-xl-3.xd.min
                             h5 Adobe XD
                             img(src="../images/xd.png")#logo
-                        .col-md-3.col-md-offset-1.pug
+                        .col-xs-12.col-md-3.col-md-offset-1.col-lg-3.col-xl-3.pug.min
                             h5 MongoDB
                             img(src="../images/mongodb.png")#logo
                 
@@ -178,9 +183,8 @@ html(xmlns="http://www.w3.org/1999/xhtml", xmlns:og="http://ogp.me/ns#", xmlns:f
                     div(style='display: inline-block; text-align: left;')
                         h5.pad-bottom Download my CV in PDF format
                         br
-                        .row.color
-                            a(href='files/CV_LT.pdf', download='').navlink.download.navlink.col LT version
-                            a(href='files/CV_EN.pdf', download='').navlink.download.col.col-md-offset-2 EN version
+                        a(href='files/CV_LT.pdf', download='').download LT version
+                        a(href='files/CV_EN.pdf', download='').download EN version
                     
     script(src = '/jquery/jquery.js')
     script(src = '/bootstrap/js/bootstrap.js')
